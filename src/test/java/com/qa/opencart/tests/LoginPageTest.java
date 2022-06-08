@@ -7,9 +7,13 @@ import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.utils.Constants;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 
+@Epic( "Basic design of Login Page")
+@Story("US101: Login Functionality check")
 public class LoginPageTest extends BaseTest {
 
 	

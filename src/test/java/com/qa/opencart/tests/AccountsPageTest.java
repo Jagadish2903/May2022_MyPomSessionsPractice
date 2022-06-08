@@ -11,9 +11,15 @@ import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.utils.Constants;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 
+
+
+@Epic( "Basic design of Accounts Page")
+@Story("US102: Accounts check")
 public class AccountsPageTest extends BaseTest{
 
 	

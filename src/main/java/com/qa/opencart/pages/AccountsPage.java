@@ -12,8 +12,6 @@ import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
 
-@Epic( "Basic design of Accounts Page")
-@Story("US102: Accounts check")
 
 public class AccountsPage {
 

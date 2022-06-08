@@ -10,8 +10,7 @@ import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
 
-@Epic( "Basic design of Login Page")
-@Story("US101: Login Functionality check")
+
 public class LoginPage {
 
 	private WebDriver driver;

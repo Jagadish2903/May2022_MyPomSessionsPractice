@@ -13,8 +13,7 @@ import io.qameta.allure.Story;
 
 
 
-@Epic( "Basic design of Product Page")
-@Story("US103: Product Functionality check")
+
 
 public class ProductPage {
 	
