@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import com.qa.opencart.utils.ElementUtil;
 
 import io.qameta.allure.Epic;
+import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
 
@@ -30,11 +31,12 @@ public class LoginPage {
 	
 	
 	//Pageactions
-	
+	@Step("This is my LoginPage Title Step")
 	public String getPageTitle() {
 		return driver.getTitle();
 	}
 	
+	@Step("This is my LoginPage URL Step")
 	public String getPageUrl() {
 		return driver.getCurrentUrl();
 	}

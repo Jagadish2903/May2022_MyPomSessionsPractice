@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import com.qa.opencart.utils.ElementUtil;
 
 import io.qameta.allure.Epic;
+import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
 
@@ -40,14 +41,17 @@ public class AccountsPage {
 		return eleUtil.doIsDisplayed(product);
 	}
 	
+	@Step("This is my AccountsPage footerText Step")
 	public String footerText() {
 		return eleUtil.getText(footerText);
 	}
 	
+	@Step("This is my AccountsPage Links Step")
 	public List<String> linksListdisplayed() {
 	return	eleUtil.getListofElementsusingWaits(links, 5);
 	}
 	
+	@Step("This is my AccountsPage Product Step")
 	public ProductPage selectProduct(WebDriver driver) {
 		eleUtil.doClick(productBag);
 		return new ProductPage(driver);

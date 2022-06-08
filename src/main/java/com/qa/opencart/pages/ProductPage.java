@@ -8,6 +8,7 @@ import com.qa.opencart.utils.Constants;
 import com.qa.opencart.utils.ElementUtil;
 
 import io.qameta.allure.Epic;
+import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 
 
@@ -32,14 +33,17 @@ public class ProductPage {
 		eleUtil = new ElementUtil(driver);
 	}
 
+	@Step("This is my ProductPagecheck Item Step")
 	public String checkProduct() {
 		 return eleUtil.getText(productText);	
 	}
 	
+	@Step("This is my ProductPage addToCartBtn Step")
 	public boolean isaddToCartEnabled() {
 		return eleUtil.doISEnabled(addtoCart);
 	}
 	
+	@Step("This is my ProductPage description Step")
 	public boolean isProductDescriptiondisplayed() {
 		return eleUtil.doIsDisplayed(description);
 	}
